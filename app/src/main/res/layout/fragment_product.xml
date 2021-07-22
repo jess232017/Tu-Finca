@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="@color/green_400"
+    android:fitsSystemWindows="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green_400"
+        android:fitsSystemWindows="true">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_content"
+            android:background="@color/grey_5"
+            android:scrollbars="none"
+            android:clipToPadding="false"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollingCache="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <RelativeLayout android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <View android:background="@color/green_400"
+                    android:layout_width="fill_parent"
+                    android:layout_height="270.0dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/spacing_xxxlarge"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/spacing_large"
+                        android:paddingRight="@dimen/spacing_large">
+
+                        <ImageView
+                            android:layout_width="28.0dip"
+                            android:layout_height="28.0dip"
+                            android:tint="@android:color/white"
+                            app:srcCompat="@drawable/ic_cow2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/spacing_middle"
+                            android:layout_marginRight="@dimen/spacing_middle"
+                            android:text="Rp"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                            android:textColor="@color/grey_20"
+                            app:fontFamily="sans-serif-medium" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="350.000"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                            android:textColor="@android:color/white"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="0.0dip"
+                            android:layout_height="0.0dip"
+                            android:layout_weight="1.0" />
+
+                        <ImageView
+                            android:layout_width="25.0dip"
+                            android:layout_height="25.0dip"
+                            android:tint="@android:color/white"
+                            app:srcCompat="@drawable/ic_mail_outline" />
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:visibility="gone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_large"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="4.0dip"
+                        app:cardElevation="2.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="@dimen/spacing_large">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="45.0dip"
+                                    android:layout_height="45.0dip"
+                                    android:tint="@color/red_300"
+                                    app:srcCompat="@drawable/ic_cow2" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <LinearLayout
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Numeros de Vacas"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                        android:textColor="@color/grey_60"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="55"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/red_300" />
+                                </LinearLayout>
+
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="Agregar"
+                                    android:theme="@style/Button.Blue.Borderless" />
+                            </LinearLayout>
+
+                            <com.google.android.flexbox.FlexboxLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/spacing_mxlarge"
+                                app:flexWrap="nowrap"
+                                app:justifyContent="space_between">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/spacing_xmlarge"
+                                        android:layout_height="@dimen/spacing_xmlarge"
+                                        android:tint="@color/orange_400"
+                                        app:srcCompat="@drawable/ic_cow2" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/spacing_small"
+                                        android:text="Electric.."
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_40" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/spacing_xmlarge"
+                                        android:layout_height="@dimen/spacing_xmlarge"
+                                        android:tint="@color/teal_400"
+                                        app:srcCompat="@drawable/ic_cow2" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/spacing_small"
+                                        android:text="Cashout"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_40" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/spacing_xmlarge"
+                                        android:layout_height="@dimen/spacing_xmlarge"
+                                        android:tint="@color/blue_500"
+                                        app:srcCompat="@drawable/ic_cow2" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/spacing_small"
+                                        android:text="Games"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_40" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="@dimen/spacing_xmlarge"
+                                        android:layout_height="@dimen/spacing_xmlarge"
+                                        android:tint="@color/red_300"
+                                        app:srcCompat="@drawable/ic_cow2" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/spacing_small"
+                                        android:text="See All"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_40" />
+                                </LinearLayout>
+                            </com.google.android.flexbox.FlexboxLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_large"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:visibility="visible"
+                        app:cardCornerRadius="4.0dip"
+                        app:cardElevation="2.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/spacing_xxlarge"
+                                android:layout_marginLeft="@dimen/spacing_large"
+                                android:layout_marginRight="@dimen/spacing_large"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:gravity="center_vertical"
+                                    android:text="Datos Generales"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_40" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing_mxlarge"
+                                    android:layout_height="@dimen/spacing_mxlarge"
+                                    app:srcCompat="@drawable/ic_production_general_data" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1.0dip"
+                                android:background="@color/grey_10" />
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Animales"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Unidades"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Capacidad Carga"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Unidades"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Hembras"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Unidades"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="En Producción"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Unidades"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Machos"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Unidades"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Terneros"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Unidades"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Novillos"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Unidades"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_large"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:visibility="visible"
+                        app:cardCornerRadius="4.0dip"
+                        app:cardElevation="2.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/spacing_xxlarge"
+                                android:layout_marginLeft="@dimen/spacing_large"
+                                android:layout_marginRight="@dimen/spacing_large"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:gravity="center_vertical"
+                                    android:text="Producción de Leche"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_40" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing_mxlarge"
+                                    android:layout_height="@dimen/spacing_mxlarge"
+                                    app:srcCompat="@drawable/ic_produccion_leche" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1.0dip"
+                                android:background="@color/grey_10" />
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Litros"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ventas"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Litros"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="En Ordeño"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Litros"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Promedio Diario"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Litros"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/spacing_large"
+                        android:layout_marginTop="@dimen/spacing_small"
+                        android:layout_marginRight="@dimen/spacing_large"
+                        android:visibility="visible"
+                        app:cardCornerRadius="4.0dip"
+                        app:cardElevation="2.0dip"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/spacing_xxlarge"
+                                android:layout_marginLeft="@dimen/spacing_large"
+                                android:layout_marginRight="@dimen/spacing_large"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:gravity="center_vertical"
+                                    android:text="Producción de Carne"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_40" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/spacing_mxlarge"
+                                    android:layout_height="@dimen/spacing_mxlarge"
+                                    app:srcCompat="@drawable/ic_produccion_carne" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="fill_parent"
+                                android:layout_height="1.0dip"
+                                android:background="@color/grey_10" />
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Machos"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0 Unidades"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Ganancia Media"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="N/A"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Último Venta"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="N/A"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/spacing_large"
+                                android:paddingRight="@dimen/spacing_large">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0.0dip" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Último Pesaje"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+
+                                <View
+                                    android:layout_width="0.0dip"
+                                    android:layout_height="0.0dip"
+                                    android:layout_weight="1.0" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="N/A"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@color/grey_80"
+                                    app:fontFamily="sans-serif-medium" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0.0dip"
+                                android:layout_height="@dimen/spacing_middle" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="0.0dip"
+                        android:layout_height="@dimen/spacing_xlarge" />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            android:onClick="onClick2"
+            app:srcCompat="@drawable/ic_house_add_white"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

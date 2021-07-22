@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/finca"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/Finca"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/animal"
+        android:enabled="true"
+        android:icon="@drawable/ic_cow2"
+        android:title="@string/cow"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/statics"
+        android:enabled="true"
+        android:icon="@drawable/ic_chart"
+        android:title="@string/Producción"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/Expediente"
+        android:enabled="true"
+        android:icon="@drawable/ic_chrome_reader_mode_black_24dp"
+        android:title="@string/Expediente"
+        app:showAsAction="ifRoom" />
+</menu>

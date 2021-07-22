@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/spacing_large" android:layout_width="330.0dip" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <View android:layout_width="0.0dip" android:layout_height="@dimen/spacing_middle" />
+
+        <ImageView
+            android:layout_width="80.0dip"
+            android:layout_height="82dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_cow2"
+            android:tint="@color/green_300" />
+        <View android:layout_width="0.0dip" android:layout_height="@dimen/spacing_large" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="31dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:text="@string/bienvenida"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="@color/green_300"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:text="@string/regist"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/blue_grey_300" />
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Correo"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/blue_grey_200" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/grey_40">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/correo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4.0dip"
+                android:layout_marginRight="-4.0dip"
+                android:inputType="text"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/blue_grey_800"
+                android:theme="@style/EditText.Green" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View android:layout_width="0.0dip" android:layout_height="@dimen/spacing_mlarge" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pass"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+            android:textColor="@color/blue_grey_200" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/grey_40"
+            app:passwordToggleEnabled="true">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4.0dip"
+                android:layout_marginRight="-4.0dip"
+                android:inputType="textPassword"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/blue_grey_800"
+                android:theme="@style/EditText.Green" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <View android:layout_width="0.0dip" android:layout_height="@dimen/spacing_mxlarge" />
+
+        <Button
+            android:onClick="GOgo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-4.0dip"
+            android:layout_marginRight="-4.0dip"
+            android:background="@drawable/btn_rounded_green_300"
+            android:text="@string/ingresar"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <View android:layout_width="0.0dip" android:layout_height="@dimen/spacing_medium" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/sign_up_for_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_medium"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="SIGN UP FOR AN ACCOUNT?"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                android:textColor="@color/blue_grey_400" />
+        </LinearLayout>
+        <View android:layout_width="0.0dip" android:layout_height="@dimen/spacing_xlarge" />
+    </LinearLayout>
+</RelativeLayout>

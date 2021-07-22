@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">TuFinca2</string>
+    <string name="bienvenida">Bienvenido a \"Tu Finca\"</string>
+    <string name="regist">Registrate Para Continuar</string>
+    <string name="user">Nombre de Usuario</string>
+    <string name="pass">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="nombre_finca">Nombre Finca</string>
+    <string name="_10">10</string>
+    <string name="_81665500">81665500</string>
+    <string name="nombre">Nombre</string>
+    <string name="vaquita">Vaquita</string>
+    <string name="Raza">Raza</string>
+    <string name="propose">Proposito</string>
+    <string name="guardar">Registrar Animal</string>
+    <string name="Finca">Finca</string>
+    <string name="cow">Animales</string>
+    <string name="Producción">Producción</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vacas">Vacas</string>
+    <string name="transitionname_picture">nombredelaimagentransicion</string>
+    <string name="abre">Abreviación</string>
+    <string name="Expediente">Expediente</string>
+    <string name="procces">En proceso</string>
+    <string name="Tipo">Tipo</string>
+    <string name="Peso">Peso</string>
+    <string name="todo">TODO</string>
+    <string name="register">Acceder</string>
+    <string name="Loquea">Logueate para continuar</string>
+    <string name="Correo">Correo</string>
+    <string name="Contra">Contraseña</string>
+    <string name="edite_su_finca">Edite su Finca</string>
+    <string name="proposito">Proposito</string>
+    <string name="genero">Genero</string>
+    <string name="desarrollo">Desarrollo</string>
+    <string name="me">Medida Leche</string>
+    <string name="Me2">Media Peso</string>
+    <string name="med">Medida</string>
+    <string name="guardar2">Guardar Finca</string>
+    <string name="agrefinca">Agregue su Finca</string>
+
+    <string-array name="GENERO">
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+    <string-array name="TIPO">
+        <item>Ternero</item>
+        <item>Novillo</item>
+        <item>Toro</item>
+        <item>Destetado</item>
+    </string-array>
+
+    <string-array name="TIPOPROD">
+        <item>Leche</item>
+        <item>Carne</item>
+        <item>Ambas</item>
+    </string-array>
+
+    <string-array name="PROPOSITOFINCA">
+        <item>Doble Proposito</item>
+        <item>Produccion Carne</item>
+        <item>Produccion Leche</item>
+        <item>Cria</item>
+    </string-array>
+
+    <string-array name="Medida">
+        <item>Hectareas</item>
+        <item>Fanegadas</item>
+        <item>Cuadras</item>
+        <item>Metros</item>
+        <item>Manzana</item>
+    </string-array>
+
+    <string-array name="MedidaLiquido">
+        <item>Botella</item>
+        <item>Litro</item>
+        <item>Galon</item>
+    </string-array>
+
+    <string-array name="MedidaObjecto">
+        <item>Libra</item>
+        <item>Kilogramo</item>
+        <item>Arroba</item>
+    </string-array>
+</resources>
